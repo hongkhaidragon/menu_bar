@@ -10,7 +10,7 @@ const v =
   Math.floor(now.getMinutes() / 5); // 👈 đổi mỗi 5 phút
 
 const MENU_URL =
-  "https://phamkhanh296hk-sudo.github.io/FlashSale-All/assets/menu.html?v=" + v;
+  "https://hongkhaidragon.github.io/menu_bar/menu.html?v=" + v;
 
 fetch(MENU_URL, { cache: "no-store" })
   .then(res => {
