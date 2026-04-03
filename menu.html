@@ -1,0 +1,114 @@
+<!-- ================= BOTTOM BAR MODULE ================= -->
+<style>
+/* tránh bị page khác reset */
+.bottom-bar, .bottom-bar *{
+  box-sizing:border-box;
+}
+
+/* BAR */
+.bottom-bar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:70px;
+  background:#fff;
+
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+
+  padding:8px 0 6px;
+  border-radius:18px 18px 0 0;
+
+  box-shadow:0 -8px 25px rgba(0,0,0,.15);
+  z-index:99999;
+}
+
+/* ITEM */
+.bottom-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+
+  font-size:11px;
+  font-weight:700;
+  color:#555;
+  text-decoration:none;
+}
+
+/* ICON WRAP */
+.bottom-icon{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+
+  background:#f1f3f5;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* ICON IMG */
+.bottom-icon img{
+  width:22px;
+  height:auto;
+  display:block;
+}
+
+/* ACTIVE (để sẵn, sau này dùng JS gán) */
+.bottom-item.active{
+  color:#1e88ff;
+}
+
+.bottom-item.active .bottom-icon{
+  background:#1e88ff;
+  color:#fff;
+}
+</style>
+
+<div class="bottom-bar">
+
+  <a href="/FlashSale-All/" class="bottom-item active">
+    <div class="bottom-icon">🏠</div>
+    Home
+  </a>
+
+  <a href="/FlashSale-Shopee/" class="bottom-item">
+    <div class="bottom-icon">
+      <img src="https://cdn.coccoc.com/browser_images/mostvisited/1661854489-shopee.svg">
+    </div>
+    Shopee
+  </a>
+
+  <a href="/FlashSale-Lazada/" class="bottom-item">
+    <div class="bottom-icon">
+      <img src="https://img.lazcdn.com/us/domino/a96c58a6a88070c43bc63444f6774f51.png">
+    </div>
+    Lazada
+  </a>
+
+  <a href="#" class="bottom-item">
+    <div class="bottom-icon">
+      <img src="https://qc-static.coccoc.com/a-images/aa5/358/aa53584c2c2eddbb62c5ecc8b24241f96f71a40ec5eaf954e539e33bc27fe0c2.png">
+    </div>
+    Tiki
+  </a>
+
+  <a href="#" class="bottom-item tool">
+    <div class="bottom-icon">
+      <img src="https://cdn-icons-png.freepik.com/512/6695/6695398.png">
+    </div>
+    Tool
+  </a>
+
+  <a href="#" class="bottom-item">
+    <div class="bottom-icon">⋯</div>
+    Thêm
+  </a>
+
+</div>
+<!-- ================= END BOTTOM BAR ================= -->
